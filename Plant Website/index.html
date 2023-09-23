@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlantLife</title>
+    <link
+      rel="stylesheet"
+      href="./swiper-10.2.0/package/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./aos-master/aos-master/dist/aos.css" />
+    <script src="./swiper-10.2.0/package/swiper-bundle.min.js"></script>
+    <script src="./jquery_3.7.1.min.js"></script>
+    <script src="./aos-master/aos-master/dist/aos.js"></script>
+    <script type="text/javascript">
+      var oWidth =
+        document.documentElement.clientWidth || document.body.clientWidth;
+      if (oWidth < 695) {
+        window.location.href = "wap/index.html";
+      } else {
+      }
+      window.addEventListener(
+        "orientationchange",
+        function () {
+          var oWidth =
+            document.documentElement.clientWidth || document.body.clientWidth;
+          if (oWidth < 695) {
+            window.location.href = "wap/index.html";
+          }
+        },
+        false
+      );
+      window.addEventListener(
+        "resize",
+        function () {
+          var oWidth =
+            document.documentElement.clientWidth || document.body.clientWidth;
+          if (oWidth < 695) {
+            window.location.href = "wap/index.html";
+          }
+        },
+        false
+      );
+    </script>
+    <!-- <script src="./paroller.js-master/paroller.js-master/dist/jquery.paroller.min.js"></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <section class="sectionOne">
+        <div class="topBar">
+          <div class="logo">
+            <img src="./img/logo.png" alt="" />
+            <!-- <span>PlantLife</span> -->
+          </div>
+          <nav>
+            <ul class="navBar">
+              <li><a href="#sectionFour">關於我們</a></li>
+              <li><a href="#sectionTwo">養育環境介紹</a></li>
+              <li><a href="#sectionThree">植物介紹</a></li>
+              <li><a href="#sectionFive">聯絡我們</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contentOne">
+          <div class="topTitle">
+            <span>淨化空氣</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;選植推薦</span>
+            <a href="" class="exploreMore">
+              <span>探索更多</span>
+              <img src="./img/Vector.png" alt="" />
+            </a>
+          </div>
+          <div class="topImgBackground">
+            <div class="swiper swiperTop">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slideTop">
+                  <img src="./img/swiper_plant1.png" alt="" />
+                </div>
+                <div class="swiper-slide slideTop">
+                  <img src="./img/swiper_plant2.png" alt="" />
+                </div>
+                <div class="swiper-slide slideTop">
+                  <img src="./img/swiper_plant3.png" alt="" />
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="dowmButton">
+            <button onclick="">
+              <img src="./img/down-arrow.png" alt="" />
+            </button>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="sectionTwo" id="sectionTwo">
+        <div class="textTitle">
+          <span class="commonTitle">養育環境介紹</span>
+          <p>
+            基礎植物照顧因素就是陽光、空氣、水， <br />
+            但還是會因為各個植物物種而有所差別，以下將以各個元素來做介紹
+          </p>
+        </div>
+        <div class="environmentInt">
+          <div class="environmentContent">
+            <img src="./img/sunny.png" alt="" />
+            <span>陽光</span>
+            <p>
+              絕大多數植物都需要日照，<br />
+              以進行「光合作用」維生。<br />
+              不同植物之間<br />
+              對於光照的需求差異很大，<br />
+              不過概括來說，<br />
+              多數多肉植物、水生植物、<br />
+              果樹植物是比較耐曬的，<br />
+              觀葉植物、雨林植物、<br />
+              蘭花會是比較耐陰的。
+            </p>
+          </div>
+          <div class="environmentContent">
+            <img src="./img/air.png" alt="" />
+            <span>空氣</span>
+            <p>
+              多數植物都喜歡通風的環境， <br />
+              因為植物生長在大自然之中的<br />
+              環境裡本身就是通風的居多，<br />
+              就算是熱帶雨林的高濕度環境，<br />
+              也是「維持高濕度的通風狀態」；<br />
+              而植物也透過<br />
+              葉片上的氣孔進行「呼吸作用」，<br />
+              如果葉片上有積灰塵<br />
+              也建議將它拭去，幫助植物<br />
+              進行交換二氧化碳與氧氣的流通。<br />
+            </p>
+          </div>
+
+          <div class="environmentContent">
+            <img src="./img/water.png" alt="" />
+            <span>水</span>
+            <p>
+              土乾才澆水是多數植物<br />
+              照顧的天條，<br />
+              除了難以耐受乾燥的植物<br />
+              才需要持續維持濕潤，<br />
+              多數植物循這個技巧就對了，<br />
+              只是土乾的速度會<br />
+              跟介質輸水程度<br />
+              與環境通風度<br />
+              做交互作用。<br />
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sectionThree" id="sectionThree">
+        <div class="plantIntroduce">
+          <span class="commonTitle" style="color: #faedcb">植物介紹</span>
+          <div class="swiper-down">
+            <div class="swiper swiperDown">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper swiperWrapperDown">
+                <!-- Slides -->
+                <div class="swiper-slide slideDown">
+                  <img src="./img/plant_1.png" alt="" />
+                  <span>虎尾蘭</span>
+                  <div class="liveText">
+                    <div class="dot">
+                      <span>陽光需求</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="dot">
+                      <span>通風需求</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="dot">
+                      <span>好養程度</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slideDown">
+                  <img src="./img/plant_2.png" alt="" />
+                  <span>龜背芋</span>
+                  <div class="liveText">
+                    <div class="dot">
+                      <span>陽光需求</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="dot">
+                      <span>通風需求</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                    </div>
+                    <div class="dot">
+                      <span>好養程度</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slideDown">
+                  <img src="./img/plant_3.png" alt="" />
+                  <span>青蘋果竹芋</span>
+                  <div class="liveText">
+                    <div class="dot">
+                      <span>陽光需求</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="dot">
+                      <span>通風需求</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                    </div>
+                    <div class="dot">
+                      <span>好養程度</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slideDown">
+                  <img src="./img/plant_4.png" alt="" />
+                  <span>葉門鐵樹</span>
+                  <div class="liveText">
+                    <div class="dot">
+                      <span>陽光需求</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="dot">
+                      <span>通風需求</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="dot">
+                      <span>好養程度</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slideDown">
+                  <img src="./img/plant_5.png" alt="" />
+                  <span>白馬粗肋草</span>
+                  <div class="liveText">
+                    <div class="dot">
+                      <span>陽光需求</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="dot">
+                      <span>通風需求</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                    </div>
+                    <div class="dot">
+                      <span>好養程度</span>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div style="background-color: #5f6f52"></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionFour" id="sectionFour">
+        <div class="aboutUs">
+          <span class="commonTitle">關於我們</span>
+          <div class="aboutUsContent">
+            <div class="aboutUsIntroduce">
+              <img src="./img/item_1.png" alt="" />
+              <p>
+                我們提供居家植物選配建議，<br />
+                從「選擇植栽」、「養護要訣」、「空間裝點」<br />
+                三個面向，掌握選植物與養護的方式，<br />
+                讓選中適合自己的植物，<br />
+                讓你的植物健康又漂亮，<br />
+                進而讓綠植也融入到你的生活當中，<br />
+                妝點出獨一無二的綠植風格，<br />
+                在平凡生活中增添一抹綠意。
+              </p>
+            </div>
+            <div class="aboutUsContainer">
+              <div
+                class="aboutUsImg"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine"
+              >
+                <img src="./img/item_2.png" alt="" />
+              </div>
+              <div
+                class="aboutUsText"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1300"
+              >
+                <span>選擇植栽</span>
+                <div></div>
+                <p>
+                  空間特性 & 綠植習性，<br />
+                  選中兼具美感又好照料的植栽，<br />
+                  完整掌握多種觀葉植物習性，<br />
+                  根據喜好與需求，再進行挑選<br />
+                </p>
+              </div>
+            </div>
+            <div class="aboutUsContainer">
+              <div
+                class="aboutUsText"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1300"
+              >
+                <span>養護要訣</span>
+                <div></div>
+                <p>
+                  植栽百科系統介紹養護，<br />
+                  並剖析常見問題，讓植物不再萎蘼不振<br />
+                  破解常見迷思，<br />
+                  手把手傳授讓植物漂亮的養護心法<br />
+                </p>
+              </div>
+              <div
+                class="aboutUsImg"
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine"
+              >
+                <img src="./img/item_3.png" alt="" />
+              </div>
+            </div>
+            <div class="aboutUsContainer">
+              <div
+                class="aboutUsImg"
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine"
+              >
+                <img src="./img/item_4.png" alt="" />
+              </div>
+              <div
+                class="aboutUsText"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1300"
+              >
+                <span>空間裝點</span>
+                <div></div>
+                <p>
+                  透過空間企劃，一步步搭建出<br />
+                  心中想要的空間，<br />
+                  增添一抹綠意，從角落一隅到居家空間，<br />
+                  讓植物妝點成為日常居家風景<br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sectionFive" id="sectionFive">
+        <div class="contactUs">
+          <span class="commonTitle">聯絡我們</span>
+          <div class="contactUsContainer">
+            <div class="contactUsLeft">
+              <label for="">姓名:</label>
+              <input type="text" placeholder="請輸入姓名" />
+              <label for="">E-mail:</label>
+              <input type="text" placeholder="請輸入信箱" />
+              <label for="">訊息:</label>
+              <input type="text" placeholder="請輸入內容" />
+              <button>送出</button>
+            </div>
+            <div class="contactUsRight">
+              <span>PlantLife Info</span>
+              <div class="InfoTextAll">
+                <div class="InfoText">
+                  <img src="./img/email.png" alt="" />
+                  <span>tj85967@yahoo.com.tw</span>
+                </div>
+                <div class="InfoText">
+                  <img src="./img/clock.png" alt="" />
+                  <span>每周一~五 09:00-18:00 (見紅就休)</span>
+                </div>
+                <div class="InfoText">
+                  <img src="./img/telephone.png" alt="" />
+                  <span>(02)-12542145</span>
+                </div>
+                <div class="InfoText">
+                  <img src="./img/home.png" alt="" />
+                  <span>台北市中山區龍江路71號1樓</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="decorativeImg"><img src="./img/item_5.png" alt="" /></div>
+        </div>
+      </section>
+      <footer>
+        <img src="./img/footer_logo.png" alt="" />
+        <p></p>
+        <span>2023 © PlantLife CO. LTD. ALL RIGHTS RESERVED.</span>
+      </footer>
+    </div>
+    <!-- swiper更多植物介紹 -->
+    <div class="lightbox" id="lightbox-1">
+      <div class="lightboxContainer">
+        <a class="lightbox_close" href="javascript:;"></a>
+        <div class="lightboxLeft">
+          <span>龜背芋</span>
+          <img src="./img/plant_2_click.png" alt="" />
+        </div>
+        <div class="lightboxRight">
+          <p>
+            龜背芋 (Monstera deliciosa，又稱電信蘭)
+            ，他們戲劇化的大葉子隨著時間生長會自然形成像洞洞起司一樣的裂葉，
+            因此他們被取了一個綽號叫“瑞士起司” ( Swiss Cheese Plant)。
+            為天南星科底下的龜背芋屬，為攀援灌木植物，也會長出許多氣根 (Aerial
+            Roots)。這些氣根會幫助他們攀附和吸收養份，建議將氣根一起固定在支架上或引導回土裡。分布於美洲熱帶地區
+          </p>
+          <div class="lightboxRightText">
+            <span>光照</span>
+            <p>雖然龜背芋可以耐陰，但是他們更喜歡明亮散射光。
+              更多的光照可以幫助葉子裂葉，但千萬不可以讓他們長時間在陽光下曝曬。
+              龜背芋喜歡朝陽光生長，建議每過幾週幫他們轉個方向。</p>
+          </div>
+          <div class="lightboxRightText">
+            <span>水份</span>
+            <p>原則上龜背芋以表面兩個指節深的土壤乾燥後再澆水，每次澆水要澆透直到水份從盆底流出。
+              龜背芋對水份的容忍度相對較高，若是忘記澆水一兩次也沒有關係，是很適合初學者的植物。
+              剛澆完水、水份充足的龜背芋在早晨時葉面會有水滴（泌液作用 Guttation），這是很正常的排水現象。</p>
+          </div>
+          <div class="lightboxRightText">
+            <span>溫度</span>
+            <p>一般的室內溫度都很適合龜背芋生長，但盡量避免低溫 13°C 以下以免造成寒害。
+              注意不要讓他們周遭溫度改變的太快，建議將他們遠離冷氣或暖氣的出風口</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 彈窗霧白背景 -->
+    <div id="lightbox_lightboxbg"></div>
+    <script src="./js/js.js"></script>
+  </body>
+</html>
