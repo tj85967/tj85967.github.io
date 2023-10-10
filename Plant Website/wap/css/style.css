@@ -43,9 +43,10 @@
     background-color: #fff;
     box-shadow: 0em 1em 15px rgba(94, 94, 94, 20%); ;
     position: relative;
+    height: 50px;
   }
   .logo {
-    width: 25vw;
+    width: 27vw;
     display: flex;
     align-items: center;
   }
@@ -65,9 +66,9 @@
   }
   .navBar li{
     border-bottom:  1px solid #cccccc;
-    height: 40px;
+    height: 45px;
     text-align: center;
-    line-height: 40px;
+    line-height: 45px;
   }
   .navBar a{
     width: 100%;
@@ -454,7 +455,7 @@ footer > span {
   font-size: 1.6rem;
   color: #5F6F52;
   font-weight: 600;
-  margin-top: 180px;
+  margin-top: 140px;
 }
 .lightboxLeft > img{
   position: absolute;
@@ -469,6 +470,7 @@ footer > span {
   padding: 35px 20px;
   color: #fff;
   padding-bottom: 0px;
+  overflow-y: scroll;
 }
 .lightboxRight p{
   font-size: 0.85rem;
@@ -535,6 +537,16 @@ footer > span {
   }
 }
 @media screen and (max-width: 320px) {
+  .logo {
+    width: 30vw;
+  }
+  .topBar {
+    height: 45px;
+  }
+  .navBar li{
+    height: 40px;
+    line-height: 40px;
+  }
   .topImgBackground {
     width: 45vw;
   }
